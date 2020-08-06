@@ -1,0 +1,9 @@
+{
+    "name": "gantzyo/afk-arena-codes-rss",
+    "description": "AFK Arena Codes RSS",
+    "type": "project",
+    "require": {
+        "jaeger/querylist": "^4.2"
+    },
+    "license": "MIT"
+}
