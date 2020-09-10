@@ -35,9 +35,9 @@ function retrieveCodes(): array
 
     $rows = $domTrs->map(function ($domTr) {
         $row = array(
-            "code" => $domTr->find("code")->text(),
-            "reward" => $domTr->find("td:last")->html(),
-            "message" => $domTr->find("em")->text()
+            "code" => $domTr->find("td:first")->text(),
+            "reward" => $domTr->find("td:first + td")->html(),
+            "message" => $domTr->find("td:last")->text()
         );
         return $row;
     });
